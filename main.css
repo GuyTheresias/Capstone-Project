@@ -360,9 +360,28 @@ body {
     animation: glow 2s infinite;
   }
 
-  img:hover {
+  .img:hover {
     animation: none;
     opacity: 75%;
     transition: ease-in-out .5s;
     
   }
+
+  @keyframes glow2 {
+    0% {
+      filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5)); 
+    }
+  
+    50% {
+      filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8)); 
+    }
+  
+    100% {
+      filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5)); 
+    }
+
+  }
+
+    #question_img {
+      animation: glow2 2s infinite;
+    }
