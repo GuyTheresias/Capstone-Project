@@ -385,3 +385,8 @@ body {
     #question_img {
       animation: glow2 2s infinite;
     }
+    #question_img:hover {
+      animation: none;
+      opacity: 75%;
+      transition: ease-in-out .5s;
+    }
