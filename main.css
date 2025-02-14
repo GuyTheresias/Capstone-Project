@@ -399,3 +399,15 @@ body {
   a {
     word-wrap: break-word;
 }
+
+.questions {
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+  transform: translateX(-100%); /* Initial position off the left side */
+}
+
+.show-questions {
+  opacity: 1;
+  transform: translateX(0); /* Move to the center */
+}

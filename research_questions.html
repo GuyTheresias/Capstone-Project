@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"
+        defer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+        defer></script>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="nav nav-underline">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="topic_map.html">Topic Map</a>
+            </li>
+            <li class="nav-item">
+                <a class="act_nav nav-link active" aria-current="page" href="research_questions.html">Research
+                    Questions</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="bibliography.html">Bibliography</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="animation-container">
+            <div class="intro-wrap">
+                <div class="noise"></div>
+                <div class="noise noise-moving"></div>
+                <div class="wrapper">
+                    <div class="text-white text-center">
+                        <h1>
+                            Capstone Project
+                        </h1>
+                        <h3>
+                            Artificial Intelligence in Robotics
+                        </h3>
+                        <h3>
+                            Spring 2025
+                        </h3>
+                    </div>
+                </div>
+                <div class="play" data-splitting>PLAY</div>
+                <div class="time">--:--</div>
+                <div class="recordSpeed">SLP 0:00:00</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="margin-top: 150px; padding: 100px; ">
+
+        <h2 class="text-white text-center">Research Questions</h2>
+        <p class="text-black-50 text-center" style="font-size: xx-small;">*Click on a question to learn more*</p>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-12">
+                <div class="container">
+                    <div class="questions row" id="ethics">
+                        <div class="col-md-12 text-center">
+                            <p class="text-white">
+                                <b>
+                                    What are the Ethics of AI in Robotics?
+                                </b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row" id="ethics_a" hidden>
+                        <div class="col-md-8 offset-md-2" style="color: white;">
+                            <p>
+                                &nbsp;&nbsp;&nbsp;AI-powered robotics is revolutionizing industries, but ethical
+                                concerns are growing. A
+                                major issue is accountability—many AI systems function as "black boxes," making
+                                decisions without clear explanations (SAGE Publishing). This lack of transparency raises
+                                concerns in hiring, finance, and healthcare, where fairness is essential. Additionally,
+                                OECD warns that AI can inherit biases from its training data, potentially leading to
+                                discrimination in recruitment, promotions, and customer interactions.
+                            </p>
+                            <p>
+                                &nbsp;&nbsp;&nbsp;As Albal highlights, AI is becoming a workplace collaborator rather
+                                than a replacement.
+                                However, without proper oversight, AI-driven robots could reinforce inequalities or make
+                                decisions that negatively impact employees. Businesses must implement AI ethically,
+                                ensuring it supports workers rather than undermines them. Establishing transparency and
+                                ethical standards will build trust and maximize AI’s potential.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5 mb-5">
+            <div class="col-md-12">
+                <div class="container">
+                    <div class="questions row" id="data">
+                        <div class="col-md-12 text-center">
+                            <p class="text-white">
+                                <b>
+                                    Is AI Data Collection Ethical?
+                                </b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row" id="data_a" hidden>
+                        <div class="col-md-8 offset-md-2" style="color: white;">
+                            <p>
+                                &nbsp;&nbsp;&nbsp;AI relies on vast amounts of data, but how that data is collected
+                                raises critical ethical concerns. Harvard Data Science Review (Dick) points out that AI
+                                often analyzes workplace data—sometimes without employees’ full awareness. This could
+                                include performance metrics, communication patterns, or even biometric data.
+                            </p>
+                            <p>
+                                &nbsp;&nbsp;&nbsp;Beyond privacy, biased data is a major risk. The OECD warns that AI
+                                trained on flawed datasets can lead to biased decision-making, affecting hiring,
+                                promotions, and workplace evaluations. To maintain trust, businesses must ensure that
+                                AI-driven data collection is ethical, transparent, and compliant with privacy
+                                regulations. Employees should also have a clear understanding of how AI is used in their
+                                workplace.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 mb-5">
+                <div class="col-md-12">
+                    <div class="container">
+                        <div class="questions row" id="jobs">
+                            <div class="col-md-12 text-center">
+                                <p class="text-white">
+                                    <b>
+                                        How Will AI and Robotics Impact Jobs?
+                                    </b>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row" id="jobs_a" hidden>
+                            <div class="col-md-8 offset-md-2" style="color: white;">
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;AI is increasing efficiency, especially in fields like engineering
+                                    and manufacturing (Johns Hopkins). While automation can reduce labor costs, it also
+                                    raises concerns about job security. However, AI isn’t just replacing workers—it’s
+                                    also enhancing training and skill development.
+                                </p>
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;As Albal discusses, AI-powered tutors and robotic assistants are
+                                    emerging as training tools, helping workers develop new skills. AI can provide
+                                    real-time guidance, personalized learning, and adaptive training programs, making
+                                    employees more adaptable in a changing job market.
+                                </p>
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;The future of work depends on how businesses implement AI.
+                                    Companies that use AI to enhance employee training and productivity will build a
+                                    future-ready workforce. By treating AI as a tool for collaboration rather than a
+                                    replacement, businesses can foster growth, innovation, and job security in the
+                                    AI-driven workplace.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid " style="margin-top: 115px;">
+        <DIV class="ROW">
+            <div class="col-md-12 text-end text-white " style="font-size: xx-small;">
+                Made with association with ChatGPT
+            </div>
+        </DIV>
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
