@@ -21,3 +21,24 @@ function checkScroll() {
 
 window.addEventListener('scroll', checkScroll);
 
+
+function showEthics() {
+    document.getElementById('ethics_a').removeAttribute('hidden');
+    document.getElementById('data_a').hidden = true;
+    document.getElementById('jobs_a').hidden = true;
+}
+
+function showData() {
+    document.getElementById('data_a').removeAttribute('hidden')
+    document.getElementById('ethics_a').hidden = true;
+    document.getElementById('jobs_a').hidden = true;
+}
+
+function showJobs()
+{
+    document.getElementById('jobs_a').removeAttribute('hidden')
+    document.getElementById('data_a').hidden = true;
+    document.getElementById('ethics_a').hidden = true;
+
+}
+
