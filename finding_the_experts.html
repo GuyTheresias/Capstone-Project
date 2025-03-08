@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding the Experts</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"
+        defer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+        defer></script>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+
+<body>
+    <div class="container-fluid">
+        <div class="animation-container">
+            <div class="intro-wrap">
+                <div class="noise"></div>
+                <div class="noise noise-moving"></div>
+                <div class="wrapper">
+                    <div class="text-white text-center">
+                        <h1>
+                            Capstone Project
+                        </h1>
+                        <h3>
+                            Artificial Intelligence in Robotics
+                        </h3>
+                        <h3>
+                            Spring 2025
+                        </h3>
+                    </div>
+                </div>
+                <div class="play" data-splitting>PLAY</div>
+                <div class="time">--:--</div>
+                <div class="recordSpeed">SLP 0:00:00</div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar justify-content-center" style="height: 15%;">
+        <ul class="nav nav-underline">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">About Me |</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="topic_map.html">Topic Map |</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="research_questions.html">Research Questions |</a>
+            </li>
+            <li class="nav-item">
+                <a class="act_nav nav-link active" href="finding_the_experts.html">Experts |</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="article_summary.html">Article Summary |</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="bibliography.html">Bibliography</a>
+              </li>
+        </ul>
+    </nav>
+
+    <div class="container" style="margin-top: 150px; margin-bottom: 35px;">
+        <div class="row">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-white text-center">
+                        Finding the Experts
+                    </h2>
+                    <p class="text-black-50 text-center" style="font-size: xx-small;">
+                        *Click on the picture to learn more*
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6 text-center" id="cataleta">
+                    <div class="img-container" onclick="showExpertInfo({cataleta : true})">
+                        <img src="Imgs/maria_cat.png" alt="Dr. Maria Stefania Cataleta"
+                            class="experts_imgs img center img-fluid rounded-circle">
+                    </div>
+                    <p class="text-white mt-3">Dr. Maria Stefania Cataleta</p>
+                    <p class="text-black-50 text-center" style="font-size: xx-small;">
+                        FSW Library Source
+                    </p>
+
+                    <p style="color: white" class="text-start" id="cataleta_info" hidden>
+                        &nbsp;&nbsp;&nbsp; This is Dr. Maria Stefania Cataleta. She is an Italian lawyer and lecturer in
+                        several universities spanning Italy and France. She received her Ph.D. in Public Law from the
+                        Université Côte d'Azur in France and her master degree in international law (LL.M.) from the
+                        City University of London in the UK (“Short Biographies”). In regard to the article, Cataleta is
+                        expressing her ethical concerns regarding AI and speaks about the legal ramifications of not
+                        keeping the technology in check.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center" id="brown" onclick="showExpertInfo({brown : true})">
+                    <div class="img-container">
+                        <img src="Imgs/sara_brown.png" alt="Sara Brown"
+                            class="experts_imgs img center img-fluid rounded-circle">
+                    </div>
+                    <p class="text-white mt-3">Sara Brown</p>
+                    <p class="text-black-50 text-center" style="font-size: xx-small;">
+                        Online Source
+                    </p>
+                    <p style="color: white;" class="text-start" id="brown_info" hidden>
+                        &nbsp;&nbsp;&nbsp; This is Sara Brown. She has her master’s degree in journalism from Boston
+                        University and undergraduate from the University of Washington. Her article summarizes the
+                        findings found in a MIT publication made by one of MIT’s professor of economics Daron Acemoglu
+                        and Boston University associate professor of economics Pascual Restrepo. Both professors have
+                        experience in research and, in their paper, wanted to find how much industrial robotics affected
+                        jobs and wages.
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6 text-center" id="acemoglu" onclick="showExpertInfo({acemoglu : true})">
+                    <div class="img-container">
+                        <img src="Imgs/daron_ace.png" alt="Daron Acemoglu"
+                            class="experts_imgs img center img-fluid rounded-circle">
+                    </div>
+                    <p class="text-white mt-3">Daron Acemoglu</p>
+                    <p class="text-black-50 text-center" style="font-size: xx-small;">
+                        Online Source
+                    </p>
+                    <p class="text-start" style="color: white;" id="acemoglu_info" hidden>
+                        &nbsp;&nbsp;&nbsp; This is Daron Acemoglu. He is a professor of economics at MIT. He is the
+                        author of the paper that this project is based on.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center" id="restrepo" onclick="showExpertInfo({restrepo : true})">
+                    <div class="img-container">
+                        <img src="Imgs/pascual.png" alt="Pascual Restrepo"
+                            class="experts_imgs img center img-fluid rounded-circle">
+                    </div>
+                    <p class="text-white mt-3">Pascual Restrepo</p>
+                    <p class="text-black-50 text-center" style="font-size: xx-small;">
+                        Online Source
+                    </p>
+                    <p class="text-start" style="color: white;" id="restrepo_info" hidden>
+                        &nbsp;&nbsp;&nbsp; This is Pascual Restrepo. He is a professor of economics at Boston
+                        University. He is the author of the paper that this project is based on.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5" id="show_experts" hidden>
+        <div class="col-md-12 text-end">
+            <button class="btn text-white " style="background-color: #213eff;"
+                onclick="showExperts('cataleta', 'brown', 'acemoglu', 'restrepo')">
+                Back
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>

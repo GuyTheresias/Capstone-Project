@@ -387,7 +387,7 @@ body {
     }
     #question_img:hover {
       animation: none;
-      opacity: 75%;
+      opacity: 50%;
       transition: ease-in-out .5s;
     }
 
@@ -412,4 +412,27 @@ body {
   transform: translateX(0); /* Move to the center */
 }
 
+.navbar-toggler {
+  background-color: white;
+}
+
+.experts_imgs {
+  width: 350px; 
+  height: 350px;
+}
+
+.img-container:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+#blog_banner {
+  background-image: url(Imgs/blog_banner.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
