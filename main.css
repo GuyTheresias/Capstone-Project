@@ -436,3 +436,38 @@ body {
   justify-content: center;
 }
 
+.act_imgs {
+  filter:saturate(0%);
+  width: 15%;
+  height:300px;
+  border: 3px solid white;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: all ease 0.3s;
+  cursor: pointer;
+}
+.act_imgs:hover {
+  filter:saturate(100%);
+  transition: all ease 0.3s;
+  width: 35%;
+}
+
+#nasa_banner {
+  background-image: url(Imgs/nasa_img.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#ford_banner {
+  background-image: url(Imgs/ford_theatre.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
